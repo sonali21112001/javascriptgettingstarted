@@ -1,0 +1,94 @@
+
+<!-- <body>  
+     <button onclick="simpleSwitch();">Switch Sample</button> 
+    <script>
+        function simpleSwitch(){
+            let productId = 3;
+
+            switch(productId) {
+                case 1: 
+                console.log('product 1');
+                break;
+                case 2: 
+                console.log('product 2');
+                break;
+                default:
+                console.log ('unknown product');
+
+            }
+
+        }
+
+    </script>
+    
+    <script>
+        function Person(first, last) {
+            this.firstName = first;
+            this.lastName = last;
+            this.fullName  = function (){
+
+            }
+        }
+
+        let p1 = new Person("A","B");
+        let p2 = new Person("c","D");
+    </script>
+
+    <script>
+
+        console.log("Begin the Scope sample");
+        console.log(this.toString());
+        console.log("this === window = " + (this === window).toString());
+        console.log("End: global scope sample");
+
+        function functionScope(){
+            console.log(this.toString());
+            console.log("this === window = " + (this === window). toString());
+        }
+     </script>
+
+
+    <button onclick="this.style.background='Red'">
+         In event handler
+    </button>
+    <button onclick="eventHandler(this)">
+        pass to function from event handler
+    </button>
+
+    <script>
+        'use strict';
+
+        function eventHandler(ctl){
+            console.log(ctl.toString());
+        }
+    </script> 
+
+    
+
+</body> -->
+<!-- <body> 
+
+    <body>
+    <script>
+        function stringToArray(){
+            let productName = "FR-R92B-58";
+
+            let values = [...productNumber];
+
+            console.log(values);
+        }
+
+    </script>
+        <script>
+        function copyArray(){
+            let arr = [1,2,3];
+            let arr2 = [...arr];
+
+            arr2.push(4);
+            arr2[0] = 99;
+
+             console.log(arr);
+             console.log(arr2);
+        }
+    </script>
+</body>
