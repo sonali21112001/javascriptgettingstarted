@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <script>
+    //this keyword
+    //create an object
+    const person = {
+      firstname: "john",
+      lastname: "doe",
+      id: 5566,
+      fullname: function () {
+        return this.firstname + " " + this.lastname;
+      },
+    };
+
+    //display data from the object:
+
+    document.getElementById("demo").innerHTML = person.fullname();
+
+    //JavaScript Array filter()
+    const ages = [32, 33, 16, 40];
+
+    document.getElementById("demo1").innerHTML = ages.filter(checkAdult);
+
+    function checkAdult(age) {
+      return age >= 18;
+    }
+
+//JavaScript Array map()
+const numbers = [4, 9, 16, 25];
+document.getElementById("demo2").innerHTML = numbers.map(Math.sqrt);
+  
+   //JavaScript Array reduce()
+   const numbers1 = [175, 50, 25];
+document.getElementById("demo3").innerHTML = numbers1.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+  </script>
+
+  <body></body>
+</html>
